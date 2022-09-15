@@ -1,2 +1,36 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+Console.Clear();
+string [] array1 = {"hello", "2", "world", "22", ":-)"};
+// string[] array1 = { "1234", "1567", "-2", "computer science" };
+// string [] array1 = {"Russia", "Denmark", "Kazan"};
+
+string[] array2 = new string[array1.Length];
+void SortMassiveElements(string[] array1, string[] array2)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length <= 3)
+        {
+            array2[count] = array1[i];
+            count++;
+        }
+    }
+}
+
+void Print(string[] Array)
+{
+    for (int i = 0; i < Array.Length; i++)
+    {
+        Console.WriteLine(Array[i]);
+    }
+}
+
+
+SortMassiveElements(array1, array2);
+Console.WriteLine($"\nЭлементы длиной менее/ равно 3-х символов: ");
+Print(array2);
+Console.WriteLine("Элементы массива:  ");
+Print(array1);
+
+
