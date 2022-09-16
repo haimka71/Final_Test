@@ -1,7 +1,7 @@
 ﻿
 Console.Clear();
 // string [] array1 = {"hello", "2", "world", "22", ":-)"};
-string[] array1 = { "12", "67", "-2", "com", "sdfff"};
+string[] array1 = { "1234", "1567", "-2", "computer science"};
 // string [] array1 = {"Russia", "Denmark", "Kazan"};
 
 string[] array2 = new string[array1.Length];
@@ -26,11 +26,11 @@ void Print(string[] Array)
     }
 }
 
-
 SortMassiveElements(array1, array2);
 Console.WriteLine("Элементы массива:  ");
 Print(array1);
-Console.WriteLine($"\nЭлементы длиной менее/ равно 3-х символов: ");
+Console.WriteLine();
+Console.WriteLine($"\nЭлементы длиной менее или равно 3-х символов: ");
 Print(array2);
 
 
